@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversor easi-amsword a html</title>
+    <meta charset='UTF-8' />
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <meta name="description" content="Amstrad CPC, Easi-amsword, HTML">
+    <link REL="stylesheet" TYPE="text/css" HREF="eamsword2html.css">
+</head>
+<body>
+<h1>Conversor easi-amsword a html</h1>
+Archivo a convertir: <input type="file" id="contenido" onchange="leerArchivo('contenido', 'contenedor-original')" /><br />
+<div class="caja">    
+    <div class="codigo" id="original">
+        <h2>Archivo Easy-Amsword en crudo</h2>
+        <p><input type="button" value="Recargar" onclick="leerArchivo('contenido', 'contenedor-original')" /></p>
+        <textarea rows="30" class="codigo" id="contenedor-original"></textarea>
+        <span id="longitud" class="codigo"></span>
+    </div>
+    <div class="codigo" id="conversion">
+        <h2>Código convertido a HTML</h2>
+        <p>
+            <input type="button" value="Convertir a HTML" onclick="convertirahtml('contenedor-original', 'contenedor-conversion')" />
+            <input type="button" value="Ver como HTML" onclick="verhtml('contenedor-conversion')" />
+            <input type="button" value="Guardar como HTML" onclick="guardarahtml('contenedor-conversion')" />
+        </p>
+        <textarea rows="30" class="codigo" id="contenedor-conversion"></textarea>
+    </div>
+</div>
+<div class="copyright">
+<a href="http://malagaoriginal.blogspot.com.es/2015/09/conversor-de-archivos-de-easi-amsword_6.html"><img src="easiamsword2html.png" class="icono" alt="Ayuda conversor eamsword2html" title="Ayuda conversor eamsword2html" /></a>
+Para más detalles sobre el funcionamiento, historia de programa, codigo fuente, etc... pulsa en el icono de la derecha
+<h6>Creado por Jesús B.L. (CPCBEGIN) bajo licencia <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU/GPL 2</a></h6>
+</div>
+<script type="text/javascript" src="eamsword2html.js"></script>
+</body>

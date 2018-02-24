@@ -1,0 +1,41 @@
+body {
+    background-color: #b5f9ff;
+    color: #000066;
+}
+
+h1 {
+    text-align: center;
+    background-color: #000066;
+    color: yellow;
+    padding: 1em;
+}
+
+h2 {
+    color: olive;
+}
+
+div.caja div.codigo {
+    display: inline;
+    width: 50%;
+}
+
+div.caja div.codigo#original {
+    float:left;
+}
+
+div.caja div.codigo#conversion {
+    float:right;
+}
+
+div.caja div.codigo textarea {
+    width: 98%;
+}
+
+div.copyright {
+    clear: both;
+    padding: 1em 0;
+}
+.icono {
+    float: right;
+    height: 5em;
+}
